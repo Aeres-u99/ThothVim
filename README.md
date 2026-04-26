@@ -1,4 +1,4 @@
-# ThotVim
+# ThothVim
 
 _No configs, no feelings, just speed._
 
