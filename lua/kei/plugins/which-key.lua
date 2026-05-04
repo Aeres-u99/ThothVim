@@ -14,6 +14,8 @@ return {
             { "<leader>fb", "<cmd>Telescope buffers<cr>" , desc = "List buffers", mode = "n" },
             { "<leader>fh", "<cmd>Telescope help_tags<cr>" , desc = "List help tags", mode = "n" },
             { "<leader>fk", "<cmd>Telescope keymaps<cr>" , desc = "List keymaps", mode = "n" },
+            { "<leader>fd", "<cmd>Telescope diagnostics<cr>" , desc = "List Diagnostics", mode = "n" },
+            { "<leader>fr", function() require('telescope').extensions.flutter.commands() end, desc = "Open command Flutter", mode = "n" },
             { "<leader>cc", function() vim.cmd("colorscheme catppuccin") end, desc = "Set Catppuccin", mode = "n" },
             { "<C-\\>", "<cmd>ToggleTerm<CR>", desc = "Toggle Terminal", mode = "n" },
             { "<leader>tp", "<cmd>TermExec cmd='python'<CR>", desc = "Open Python REPL", mode = "n" },
@@ -21,7 +23,9 @@ return {
             { "<leader>cg", function() vim.cmd("colorscheme gruvbox") end, desc = "Set Gruvbox", mode = "n" },
             { "<leader>ct", function() vim.cmd("colorscheme tokyonight") end, desc = "Set Tokyonight", mode = "n" },
             { "<leader>at", function() vim.cmd("AerialToggle") end, desc = "Toggle Aerial", mode = "n" },
-            { "<leader>nt", function() vim.cmd("NvimTreeToggle") end, desc = "Toggle Nvim Tree", mode = "n" }
+            { "<leader>nt", function() vim.cmd("NvimTreeToggle") end, desc = "Toggle Nvim Tree", mode = "n" },
+            { "<leader>rm", function() vim.cmd("RenderMarkdowntoggle") end, desc = "Render Markdown Page", mode = "n" },
+            { "<leader>p", function() vim.cmd("PasteImage") end, desc = "Paste Image into Document", mode = "n" }
         }
         wk.add(mappings) -- Apply the mappings
     end
